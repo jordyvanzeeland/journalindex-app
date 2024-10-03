@@ -20,7 +20,6 @@ const Categories = (props) => {
 
     return(
         <React.Fragment>
-            <Header />
             <Sidebar />
             <div className="content">
                 <div className="container-fluid">

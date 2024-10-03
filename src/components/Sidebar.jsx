@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
     return(
         <div className="sidebar">
+            <h2>JournalIndex</h2>
             <ul>
                 <NavLink to={'/'} exact="true">
                     <li><i className="fas fa-book"></i> Journals</li>

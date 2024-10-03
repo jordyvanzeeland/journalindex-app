@@ -1,15 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');;
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 html, body{
-    background: #eee;
-    font-family: "Montserrat", sans-serif;
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    font-size: 15px;
+}
+
+body{
+    border-top: solid 10px #456d61;
 }
 
 h3{
-    font-size:18px;
+    font-size:20px;
     margin: 10px 0;
+    color: #000;
+    font-weight: 600;
+}
+
+i{
+    color: #456d61;
+    margin-right: 5px;
 }
 
 textarea:focus, input:focus{
@@ -131,43 +143,60 @@ textarea:focus, input:focus{
 }
 
 .sidebar{
-    max-width:200px;
+    max-width:300px;
     width: 100%;
-    background: #ffffff;
+    background: #f3f4f6;
     height: 100vh;
     position: fixed;
     padding: 0;
+    border-right: solid 3px #eee;
+}
+
+.sidebar h2{
+    color: #8c8e90;
+    font-size: 20px;
+    padding: 25px 20px 0px 33px;
 }
 
 .sidebar ul{
-    padding:0;
+    padding:15px;
     margin:0;
 }
 
 .sidebar ul li{
     list-style-type: none;
-    padding: 10px 10px;
+    padding: 12px 15px;
+    color: #8f9193;
 }
 
 .sidebar ul a{
     color: #313634;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .sidebar ul li i{
-    color: #456d61;
+    color: #8f9193;
     width: 23px;
 }
 
-.sidebar .active li{
-    background: rgba(69, 109, 97, 0.2) !important;
-    padding: 10px 10px;
+.sidebar .active li i{
+    color: #456d61;
 }
 
+.sidebar .active li{
+    background: #ffffff;
+    padding: 12px 15px;
+    color: #456d61;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+
 .content{
-    padding: 30px 30px 30px 230px;
+    padding: 30px 30px 30px 330px;
 }
 
 .calendar {
@@ -227,5 +256,50 @@ textarea:focus, input:focus{
   .day-name, .dayname {
     text-align: center;
     font-weight: bold;
+  }
+
+  .journalicon{
+    margin-bottom: 0px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 3px;
+    color: #456d61;
+  }
+
+  .journalname{
+    font-weight: 400;
+    display: block;
+    width: 95%;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+
+  .journaldesc{
+    color: rgb(143, 145, 147);
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  table{
+    margin-top:20px;
+  }
+
+  table tr td{
+    padding: 15px 0 !important;
+  }
+
+  table tr:last-child td{
+    border: none !important;
+  }
+
+  .btn-add{
+    float: right;
+    background: rgb(69, 109, 97);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    margin-top: -5px;
   }
   

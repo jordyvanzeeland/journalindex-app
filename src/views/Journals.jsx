@@ -20,27 +20,35 @@ const Journals = (props) => {
 
     return(
         <React.Fragment>
-            <Header />
             <Sidebar />
             <div className="content">
                 <div className="container-fluid">
+                    <button className="btn btn-add" >Toevoegen</button>
                     <h3>Journals</h3>
 
                     <table className="table resonsive nowrap" width="100%">
-                        <thead>
+                        <thead style={{ display: 'none' }}>
                             <tr>
                                 <th>Naam</th>
-                                <th>Beschrijving</th>
                                 <th>Datum</th>
+                                <th>Entries</th>
+                                <th>Categorieën</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             {journals.map((journal, i) => {
                                 return(
                                     <tr key={i}>
-                                        <td onClick={() => navigate(`/challenge/${journal.id}`)}>{journal.name}</td>
-                                        <td>{journal.description}</td>
-                                        <td>{journal.dateBegin} {journal.dateEnd}</td>
+                                        <td onClick={() => navigate(`/challenge/${journal.id}`)}>
+                                            <i className="journalicon fas fa-book"></i> 
+                                            <span className="journalname">{journal.name}</span>
+                                            {/* <span className="journaldesc">{journal.description}</span> */}
+                                        </td>
+                                        <td>{journal.dateBegin} - {journal.dateEnd}</td>
+                                        <td><i class="fas fa-file-lines"></i> 0</td>
+                                        <td><i class="fa-solid fa-list"></i> 0</td>
+                                        <td><i style={{ float: 'right', fontSize: '15px', textAlign: 'center' , background: 'red', color: 'white', width: '25px', height: '25px', padding: '5px', borderRadius: "50%" }} class="fa-solid fa-trash-can"></i></td>
                                     </tr>
                                 )
                             })}
