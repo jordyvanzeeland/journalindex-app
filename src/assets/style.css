@@ -301,5 +301,19 @@ textarea:focus, input:focus{
     color: rgb(255, 255, 255);
     padding: 7px 15px;
     margin-top: -5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-delete{
+    float: right; 
+    font-size: 15px;
+    text-align: center;
+    background: red;
+    color: white; 
+    width: 25px; 
+    height: 25px; 
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
   }
   

@@ -46,9 +46,9 @@ const Journals = (props) => {
                                             {/* <span className="journaldesc">{journal.description}</span> */}
                                         </td>
                                         <td>{journal.dateBegin} - {journal.dateEnd}</td>
-                                        <td><i class="fas fa-file-lines"></i> 0</td>
-                                        <td><i class="fa-solid fa-list"></i> 0</td>
-                                        <td><i style={{ float: 'right', fontSize: '15px', textAlign: 'center' , background: 'red', color: 'white', width: '25px', height: '25px', padding: '5px', borderRadius: "50%" }} class="fa-solid fa-trash-can"></i></td>
+                                        <td><i className="fas fa-file-lines"></i> 0</td>
+                                        <td><i className="fa-solid fa-list"></i> 0</td>
+                                        <td><i className="btn-delete fa-solid fa-trash-can"></i></td>
                                     </tr>
                                 )
                             })}
