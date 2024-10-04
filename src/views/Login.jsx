@@ -13,7 +13,7 @@ const Login = () => {
             localStorage.setItem('token', data.access_token);
             localStorage.setItem('token_issued', moment().format("YYYY-MM-DD HH:mm:ss"));
             localStorage.setItem('token_expired', moment().add(1, 'hours').format("YYYY-MM-DD HH:mm:ss"));
-            window.location.reload();
+            window.location.href = '/journals';
         }
     }
 

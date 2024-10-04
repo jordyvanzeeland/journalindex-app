@@ -5,7 +5,7 @@ const Sidebar = () => {
         <div className="sidebar">
             <h2>JournalIndex</h2>
             <ul>
-                <NavLink to={'/'} exact="true">
+                <NavLink to={'/journals'} exact="true">
                     <li><i className="fas fa-book"></i> Journals</li>
                 </NavLink>
 
